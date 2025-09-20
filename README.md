@@ -1,4 +1,7 @@
 Arsenal FC Fan Page
+
+
+
 This project is a simple, single-page website dedicated to Arsenal Football Club. It's built using only HTML and CSS to showcase the club's history, major honors, and a few interactive forms for fans. The site is fully responsive and a great example of a basic static website.
 
 Features 
