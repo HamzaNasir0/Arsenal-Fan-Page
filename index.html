@@ -4,11 +4,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/styles.css">
     <title>Arsenal FC - Honours & Formation</title>
 </head>
 
 <body>
+    <!-- <nav class="navbar">
+        <ul>
+            <li><a href="#trophies">Trophies</a></li>
+            <li><a href="#formation">Formation Selector</a></li>
+            <li><a href="#goals">Top Scorers</a></li>
+            <li><a href="#prediction">Prediction Form</a></li>
+        </ul>
+    </nav> -->
+
     <main>
         <header>
             <h1>Arsenal FC</h1>
@@ -16,7 +28,22 @@
             <img src="./assets/img/champions_2004.jpg" alt="arsenal winning the 2003-2004 premiership trophy.">
         </header>
 
-        <section>
+        <section id="invincibles">
+            <h2>The Invincibles</h2>
+            <p>The 2003/04 Arsenal team, managed by <strong>Arsène Wenger</strong>, was the first English top-flight
+                side since Preston
+                North End in
+                1888/89 to complete a league season unbeaten. Their style of play was characterized by a strong defense
+                and a fast, fluid attack. The spine of the team included goalkeeper <strong>Jens Lehmann</strong>,
+                defenders <strong>Sol
+                    Campbell</strong>
+                and <Strong>Kolo Touré</Strong>, midfielder <strong>Patrick Vieira</strong>, and record-breaking striker
+                <strong>Thierry
+                    Henry</strong>.
+            </p>
+        </section>
+
+        <section id="trophies">
             <h2>Major Trophies Won</h2>
             <table>
                 <thead>
@@ -68,12 +95,12 @@
             </table>
         </section>
 
-        <section>
+        <section id="formation">
             <h2>4-3-3 Formation Selector</h2>
             <form method="post" action="#">
                 <fieldset>
                     <legend>Forwards</legend>
-                    <div>
+                    <div class="form-group">
                         <label for="lw">LW:</label>
                         <select id="lw" name="lw">
                             <option value="">-- Select Player --</option>
@@ -84,7 +111,7 @@
                         </select>
                     </div>
 
-                    <div>
+                    <div class="form-group">
                         <label for="st">ST:</label>
                         <select id="st" name="st">
                             <option value="">-- Select Player --</option>
@@ -96,7 +123,7 @@
                         </select>
                     </div>
 
-                    <div>
+                    <div class="form-group">
                         <label for="rw">RW:</label>
                         <select id="rw" name="rw">
                             <option value="">-- Select Player --</option>
@@ -112,7 +139,7 @@
 
                 <fieldset>
                     <legend>Midfielders</legend>
-                    <div>
+                    <div class="form-group">
                         <label for="lcm">LCM:</label>
                         <select id="lcm" name="lcm">
                             <option value="">-- Select Player --</option>
@@ -124,7 +151,7 @@
                         </select>
                     </div>
 
-                    <div>
+                    <div class="form-group">
                         <label for="cm">CM (CAM):</label>
                         <select id="cm" name="cm">
                             <option value="">-- Select Player --</option>
@@ -135,7 +162,7 @@
                         </select>
                     </div>
 
-                    <div>
+                    <div class="form-group">
                         <label for="rcm">RCM:</label>
                         <select id="rcm" name="rcm">
                             <option value="">-- Select Player --</option>
@@ -150,7 +177,7 @@
 
                 <fieldset>
                     <legend>Defenders</legend>
-                    <div>
+                    <div class="form-group">
                         <label for="lb">LB:</label>
                         <select id="lb" name="lb">
                             <option value="">-- Select Player --</option>
@@ -161,7 +188,7 @@
                         </select>
                     </div>
 
-                    <div>
+                    <div class="form-group">
                         <label for="lcb">LCB:</label>
                         <select id="lcb" name="lcb">
                             <option value="">-- Select Player --</option>
@@ -172,7 +199,7 @@
                         </select>
                     </div>
 
-                    <div>
+                    <div class="form-group">
                         <label for="rcb">RCB:</label>
                         <select id="rcb" name="rcb">
                             <option value="">-- Select Player --</option>
@@ -183,7 +210,7 @@
                         </select>
                     </div>
 
-                    <div>
+                    <div class="form-group">
                         <label for="rb">RB:</label>
                         <select id="rb" name="rb">
                             <option value="">-- Select Player --</option>
@@ -196,7 +223,7 @@
 
                 <fieldset>
                     <legend>Goalkeeper</legend>
-                    <div>
+                    <div class="form-group">
                         <label for="gk">GK:</label>
                         <select id="gk" name="gk">
                             <option value="">-- Select Player --</option>
@@ -208,7 +235,7 @@
             </form>
         </section>
 
-        <section>
+        <section id="goals">
             <h2>Most Goals Scored in All Competitions</h2>
             <table>
                 <thead>
@@ -260,7 +287,7 @@
             </table>
         </section>
 
-        <section>
+        <section id="prediction">
             <h2>Guess Who Scores</h2>
 
             <form class="prediction-form">
@@ -296,23 +323,21 @@
                             placeholder="Share your thoughts here..."></textarea>
                     </div>
 
-                    <div class="form-group ">
+                    <div class="form-group form-button">
                         <button type="submit">Submit</button>
 
                     </div>
 
                 </fieldset>
-
-
             </form>
         </section>
 
     </main>
 
-    <hr>
     <footer>
         <p>&copy; Hamza.</p>
-        <p>Contact me at: <a class="contact" href="mailto:contact@arsenalfansite.com">contact@arsenalfansite.com</a></p>
+        <p>Contact me at: <a class="contact" href="mailto:contact@arsenalfansite.com">contact@arsenalfansite.com</a>
+        </p>
     </footer>
 </body>
 
